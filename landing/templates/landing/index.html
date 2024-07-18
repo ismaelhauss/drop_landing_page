@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop</title>
+    <link rel="stylesheet" href="{% static 'landing/style.css' %}">
+    <link rel="icon" type="image/vnd.icon" href="{% static 'logoicon.png' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="{% static 'content/Logo.png' %}" alt="Logo de l'entreprise"></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/drop.mobility/?hl=fr" target="_blank"><img src="{% static 'content/instagram-icon.png' %}" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@dropmobility" target="_blank"><img src="{% static 'content/tiktok-icon.png' %}" alt="TikTok"></a>
+                <a href="https://www.linkedin.com/company/dropfrance/" target="_blank"><img src="{% static 'content/linkedin-icon.png' %}" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Déplace toi dans Lyon comme personne ne l'a encore fait</h1>
+        <div class="beta">
+            <p>Deviens beta testeur Drop et utilise notre service en avant première !</p>
+        </div>
+        <form action="#", method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+
+    <section class="advantages">
+        <div class="content">
+            <div class="advantages-list">
+                <h2>Être un beta testeur, c'est ça: </h2>
+                <div class="advantage">
+                    <img src="{% static 'content/fleche-icon.png' %}" alt="Flèche" class="icon">
+                    <div>
+                        <h3>20€ offerts</h3>
+                        <p>Rejoins l'application et profite du service sans payer.</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <img src="{% static 'content/fleche-icon.png' %}" alt="Flèche" class="icon">
+                    <div>
+                        <h3>-10% à vie</h3>
+                        <p>En devenant membre testeur, profite d'une réduction à vie.</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <img src="{% static 'content/fleche-icon.png' %}" alt="Flèche" class="icon">
+                    <div>
+                        <h3>1 expérience offerte</h3>
+                        <p>Choisis parmi une de nos expériences.</p>
+                    </div>
+                </div>
+                <!-- Bouton Télécharger l'appli 
+                <div class="download-button-container">
+                    <a href="#install" class="download-button">Télécharger l'appli</a>
+                </div> -->
+            </div>
+            <div class="image">
+                <img src="{% static 'content/advantages-image.png' %}" alt="Image des avantages">
+            </div>
+        </div>
+    </section>
+
+      <!-- Troisième section avec 4 parties -->
+      <section class="steps">
+          <div class="step" style="background-color: #EF8960;">
+              <img src="{% static 'content/telecharge.png' %}" alt="Télécharge l'appli">
+              <h3>Télécharge l'appli</h3>
+              <p>Installe l'application et crée toi un compte Drop en quelques clics.</p>
+          </div>
+          <img src="{% static 'content/arrow.png' %}" alt="Flèche" class="arrow">
+          <div class="step" style="background-color: #FFB293;">
+              <img src="{% static 'content/commande.png' %}" alt="Commande un Drop">
+              <h3>Commande un Drop</h3>
+              <p>Renseigne l'adresse où tu souhaites te rendre et attends ton chauffeur.</p>
+          </div>
+          <img src="{% static 'content/arrow.png' %}" alt="Flèche" class="arrow">
+          <div class="step" style="background-color: #EF8960;">
+              <img src="{% static 'content/deplace.png' %}" alt="Déplace toi">
+              <h3>Déplace toi</h3>
+              <p>Profite de notre véhicule innovant et confortable à travers les rues de Lyon.</p>
+          </div>
+          <img src="{% static 'content/arrow.png' %}" alt="Flèche" class="arrow">
+          <div class="step" style="background-color: #FFB293;">
+              <img src="{% static 'content/arrive.png' %}" alt="Tu es arrivé !">
+              <h3>Tu es arrivé !</h3>
+              <p>Le chauffeur te dépose à l'adresse indiquée le plus rapidement possible.</p>
+          </div>
+      </section>
+  
+      <!-- Quatrième section avec 3 cards -->
+      <section class="cards">
+          <div class="card">
+              <img src="{% static 'content/icon1.png' %}" alt="Icône 1">
+              <h3>Plus rapide</h3>
+              <p>Emprunte toutes les pistes cyclables et évites les embouteillages.</p>
+          </div>
+          <div class="card">
+              <img src="{% static 'content/icon2.png' %}" alt="Icône 2">
+              <h3>Moins cher</h3>
+              <p>Profite d'un service 20 à 30% moins cher qu'un uber ou qu'un autre système de transport.</p>
+          </div>
+          <div class="card">
+              <img src="{% static 'content/icon3.png' %}" alt="Icône 3">
+              <h3>Eco-responsable</h3>
+              <p>Participe à la transition écologique dans ta ville en utilisant nos vélos électriques.</p>
+          </div>
+      </section>
+  
+      <!--Section Drop c'est quoi?-->
+    <section class="infos">
+        <div class="drop">
+            <h2>Drop: c'est quoi ?</h2>
+            <p>Drop est un nouveau service de mobilité en ville.<br>
+            Grâce à l'application, commande un vélo cargo qui viendra te chercher pour t'emmener où tu veux.
+            Profite d'un siège confortable pour deux personnes, protégeant du vent et de la pluie.
+            Déplace toi différemment, plus rapidement et de manière plus écologique.</p>
+        </div>
+    </section>
+      <!-- Cinquième section avec les boutons d'installation 
+      <section id="install" class="install">
+          <h2>Télécharge l'application</h2>
+          <p>Et deviens un utilisateur Drop en avant-première !</p>
+          <div class="buttons">
+              <a href="#"><img src="{% static 'content/appstore.png' %}" alt="App Store"></a>
+              <a href="#"><img src="{% static 'content/playstore.png' %}" alt="Play Store"></a>
+          </div>
+      </section> -->
+  
+      <!-- Footer -->
+      <footer>
+          <p>© 2024 Drop. Tous droits réservés. <a href="mentions">Mentions légales</a></p>
+      </footer>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drop - Mentions légales</title>
+        <link rel="stylesheet" href="{% static 'landing/style.css' %}">
+        <link rel="icon" type="image/vnd.icon" href="{% static 'logoicon.png' %}">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/"><img src="{% static 'content/Logo.png' %}" alt="Logo de l'entreprise"></a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/drop.mobility/?hl=fr" target="_blank"><img src="{% static 'content/instagram-icon.png' %}" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@dropmobility" target="_blank"><img src="{% static 'content/tiktok-icon.png' %}" alt="TikTok"></a>
+                    <a href="https://www.linkedin.com/company/dropfrance/" target="_blank"><img src="{% static 'content/linkedin-icon.png' %}" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="legal">
+            <div class="valider">
+            <img src="{% static 'content/valid.png' %}" alt="Confirmation">
+            <h3>Inscription validée</h3>
+            <p>Merci de t'être inscrit !<br>On te contactera pour te tenir informé</p>
+            </div>
+        </section>
+        
+        <footer class="footer_merci">
+            <p>© 2024 Drop. Tous droits réservés. <a href="/mentions/">Mentions légales</a></p>
+        </footer>
+
+    </body>
+</html>
